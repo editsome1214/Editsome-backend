@@ -19,5 +19,5 @@ def merge_pdfs():
     merger.close()
     return send_file(output_path, as_attachment=True)
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(host='0.0.0.0', port=5000)
